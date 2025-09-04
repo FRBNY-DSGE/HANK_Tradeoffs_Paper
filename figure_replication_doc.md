@@ -108,36 +108,35 @@ The file then calls <code> simul_plot.m </code> to create the necessary figures:
 
 ### Additional impulse responses:
 <br />
+
 #### <b> Figure A1 </b>: <em> Responses to productivity shocks: aggregate variables
 <br />
 
 </em>
 To generate this figure, in <code> main_shock_analysis.m </code>, follow the aforementioned settings outlined in Section 3. It is saved in <code> paper_figures_replication/IRFs/Taylor_vs_High_Phi/Productivity.png</code>
-
 <br />
 
 #### <b> Figure A2 </b>: <em> Responses to risk premium shocks: aggregate variables </em>
 <br />
 To generate this figure, in <code> main_shock_analysis.m </code>, follow the aforementioned settings outlined in Section 3. It is saved in <code> paper_figures_replication/IRFs/Taylor_vs_High_Phi/RiskPremia.png</code>
-
 <br />
 
 ### Additional distributional responses:
 <br />
+
 #### <b> Figure A3 </b>: <em> The distributional consequences of productivity shocks </em>
 <br />
 This figure is generated as a byproduct of generating figure A1. It is saved in <code> paper_figures_replication/Distributional/Productivity_CE.png</code>
 <br />
 
 ### Additional frontier curves:
-
 <br />
+
 #### Simulating Figures A4-7
 
 ##### <b> Figure A4 </b>: <em> Frontier curves for different values of the response to unemployment $\phi_u$ </em>
 
 To generate this result, run the file <code>simulate_spec_phiu.m</code>. This is identical to main spec file <code>simulate_spec.m</code>, but it loops over relevant $\phi_u$ values. Settings will not need to be changed in this file other than changing the desired $\phi_u$ values on line 76. The simulation code should produce simulation files differentiated by $\phi_{\pi}$ and $\phi_{u}$.
-
 <br />
 
 ##### <b> Figure A5 </b>: <em> Frontier curves: consumption vs inflation volatility by wealth—simulations without imposing the ZLB </em>
@@ -244,4 +243,5 @@ To plot these figures, in <code> simulation_plot_user </code>, set the toggle <c
 <code> paper_figures_replication/Simulations/ELB=true/TFP_MK_Disagg/</code>
 </li>
 </ul>
+
 
