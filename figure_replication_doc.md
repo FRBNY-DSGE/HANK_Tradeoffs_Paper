@@ -1,5 +1,4 @@
 
-
 ## Replicating Main Figures
 
 ### Section 3:
@@ -105,10 +104,10 @@ The file then calls <code> simul_plot.m </code> to create the necessary figures:
 
 
 ## Replicating Appendix Figures
+<br />
 
 ### Additional impulse responses:
 <br />
-
 #### <b> Figure A1 </b>: <em> Responses to productivity shocks: aggregate variables
 <br />
 
@@ -125,18 +124,14 @@ To generate this figure, in <code> main_shock_analysis.m </code>, follow the afo
 
 ### Additional distributional responses:
 <br />
-
 #### <b> Figure A3 </b>: <em> The distributional consequences of productivity shocks </em>
 <br />
 This figure is generated as a byproduct of generating figure A1. It is saved in <code> paper_figures_replication/Distributional/Productivity_CE.png</code>
-
 <br />
-
 
 ### Additional frontier curves:
 
 <br />
-
 #### Simulating Figures A4-7
 
 ##### <b> Figure A4 </b>: <em> Frontier curves for different values of the response to unemployment $\phi_u$ </em>
@@ -179,7 +174,6 @@ The simulation code should produce simulation files with <code>shock_series_noco
 
 <br />
 
-
 ##### <b> Figure A7 </b>: <em> Frontier curves: baseline vs high PC slope-simulations without imposing the ZLB</em>
 
 To generate this result in <code> simulate_spec.m </code>, apply the following settings at the top of the file:
@@ -196,7 +190,6 @@ To generate this result in <code> simulate_spec.m </code>, apply the following s
 The simulation code should produce simulation files with <code> kappa=0_1 </code> and <code> ELB=false </code> in the save-string, differentiated by $\phi_{\pi}$.
 
 Note that to plot either A5 or A7, both simulations must be run.
-
 <br/>
 
 #### Plotting Figures A4-7
@@ -251,3 +244,4 @@ To plot these figures, in <code> simulation_plot_user </code>, set the toggle <c
 <code> paper_figures_replication/Simulations/ELB=true/TFP_MK_Disagg/</code>
 </li>
 </ul>
+
