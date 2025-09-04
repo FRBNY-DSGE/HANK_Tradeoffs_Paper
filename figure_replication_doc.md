@@ -104,43 +104,28 @@ The file then calls <code> simul_plot.m </code> to create the necessary figures:
 
 
 ## Replicating Appendix Figures
-<br />
 
 ### Additional impulse responses:
-<br />
 
-#### <b> Figure A1 </b>: <em> Responses to productivity shocks: aggregate variables
-<br />
-
-</em>
+#### <b> Figure A1 </b>: <em> Responses to productivity shocks: aggregate variables</em>
 To generate this figure, in <code> main_shock_analysis.m </code>, follow the aforementioned settings outlined in Section 3. It is saved in <code> paper_figures_replication/IRFs/Taylor_vs_High_Phi/Productivity.png</code>
-<br />
 
 #### <b> Figure A2 </b>: <em> Responses to risk premium shocks: aggregate variables </em>
-<br />
 To generate this figure, in <code> main_shock_analysis.m </code>, follow the aforementioned settings outlined in Section 3. It is saved in <code> paper_figures_replication/IRFs/Taylor_vs_High_Phi/RiskPremia.png</code>
-<br />
 
 ### Additional distributional responses:
-<br />
 
 #### <b> Figure A3 </b>: <em> The distributional consequences of productivity shocks </em>
-<br />
 This figure is generated as a byproduct of generating figure A1. It is saved in <code> paper_figures_replication/Distributional/Productivity_CE.png</code>
-<br />
 
 ### Additional frontier curves:
-<br />
 
 #### Simulating Figures A4-7
 
 ##### <b> Figure A4 </b>: <em> Frontier curves for different values of the response to unemployment $\phi_u$ </em>
-
 To generate this result, run the file <code>simulate_spec_phiu.m</code>. This is identical to main spec file <code>simulate_spec.m</code>, but it loops over relevant $\phi_u$ values. Settings will not need to be changed in this file other than changing the desired $\phi_u$ values on line 76. The simulation code should produce simulation files differentiated by $\phi_{\pi}$ and $\phi_{u}$.
-<br />
 
 ##### <b> Figure A5 </b>: <em> Frontier curves: consumption vs inflation volatility by wealth—simulations without imposing the ZLB </em>
-
 To generate this result in <code> simulate_spec.m </code>, apply the following settings at the top of the file:
 
 <ul>
@@ -154,10 +139,7 @@ To generate this result in <code> simulate_spec.m </code>, apply the following s
 
 The simulation code should produce simulation files with <code> ELB=false </code> in the save-string, differentiated by $\phi_{\pi}$.
 
-<br />
-
 ##### <b> Figure A6 </b>: <em> Frontier curves: consumption vs inflation volatility by wealth—simulations without Covid or GR episodes  </em>
-
 To generate this result in <code> simulate_spec.m </code>, apply the following settings at the top of the file:
 
 <ul>
@@ -171,10 +153,7 @@ To generate this result in <code> simulate_spec.m </code>, apply the following s
 
 The simulation code should produce simulation files with <code>shock_series_nocovidGR</code> in the save-string, differentiated by $\phi_{\pi}$.
 
-<br />
-
 ##### <b> Figure A7 </b>: <em> Frontier curves: baseline vs high PC slope-simulations without imposing the ZLB</em>
-
 To generate this result in <code> simulate_spec.m </code>, apply the following settings at the top of the file:
 
 <ul>
@@ -189,10 +168,8 @@ To generate this result in <code> simulate_spec.m </code>, apply the following s
 The simulation code should produce simulation files with <code> kappa=0_1 </code> and <code> ELB=false </code> in the save-string, differentiated by $\phi_{\pi}$.
 
 Note that to plot either A5 or A7, both simulations must be run.
-<br/>
 
 #### Plotting Figures A4-7
-
 Set the toggles <code>plot_main_figures = true</code> and <code>plot_appendix_frontier = true</code> in <code> simulation_plot_user </code>. Accordingly, the following figures are created:
 
 <ul>
@@ -214,24 +191,15 @@ Set the toggles <code>plot_main_figures = true</code> and <code>plot_appendix_fr
 </li>
 </ul>
 
-<br />
-
 ### Additional volatility plots:
 
-<br />
-
 #### Simulating Figures A8 and A9
-
 To generate these results, run <code> simulate_spec_TFP_MK.m </code>. To create the simulation results with productivity (TFP) shocks only, set the <code> spec_settings.use_TFP_or_MK </code> toggle to "TFP." Likewise, the same is done to generate simulation results with price markup ("MK") shocks. All other toggles remain unchanged.
 The simulation code should produce simulation files differentiated by the save-strings
 <code> shock_series_combined_hk5_{TFP/MK}_only</code>.
 
-</br>
-
 #### Plotting Figures A8 and A9
-
 To plot these figures, in <code> simulation_plot_user </code>, set the toggle <code> plot_appendix_volatility = true</code>. Accordingly, the following figures are created:
-
 
 <ul>
 <li>
@@ -243,5 +211,6 @@ To plot these figures, in <code> simulation_plot_user </code>, set the toggle <c
 <code> paper_figures_replication/Simulations/ELB=true/TFP_MK_Disagg/</code>
 </li>
 </ul>
+
 
 
