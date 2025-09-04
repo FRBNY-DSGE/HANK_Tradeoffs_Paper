@@ -40,7 +40,7 @@ state values by more than 1,500%.
 
 #### A. Shocks used 
 <ol>
-<li><em> Q.E.</em> (zeroed-out)li>
+<li><em> Q.E.</em> (zeroed-out) </li>
 <li><em> Fixed cost </em></li>
 <li><em> Risk premia </em></li>
 <li><em> Productivity (TFP)</em></li>
@@ -73,3 +73,4 @@ To generate a similar shock series to that used to create Figure A6 in the appen
 
 #### D. Generating TFP/Markup only shock series (shock_series_combined_hk_5_{TFP/MK}_only)
 To generate a similar shock series to that used to create Figures A8 and A9 in the appendix, we set to 0 all other shocks sequences except the productivity shock sequence in the shock series <code>shock_series_combined_hk_5.mat</code>. Similarly, we set to zero all other shocks sequences except the price mark-up shock. These shock series are stored in the <code> auxfiles </code> folder.
+
